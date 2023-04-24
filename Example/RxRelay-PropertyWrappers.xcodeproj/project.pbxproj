@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D7C8E30E29F748C4004F888E /* PublishRelay+PropertyWrappers-Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C8E30D29F748C4004F888E /* PublishRelay+PropertyWrappers-Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		61A9B0709500ED63E0EF1EA2 /* Pods-RxRelay-PropertyWrappers_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRelay-PropertyWrappers_Example.debug.xcconfig"; path = "Target Support Files/Pods-RxRelay-PropertyWrappers_Example/Pods-RxRelay-PropertyWrappers_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7A08B3123EA728CD4A1DD780 /* Pods_RxRelay_PropertyWrappers_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRelay_PropertyWrappers_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C8E30D29F748C4004F888E /* PublishRelay+PropertyWrappers-Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PublishRelay+PropertyWrappers-Tests.swift"; sourceTree = "<group>"; };
 		EA114930EE4E242B17189D0E /* Pods_RxRelay_PropertyWrappers_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRelay_PropertyWrappers_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F059C8BE003F6EC50FF5BA90 /* Pods-RxRelay-PropertyWrappers_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRelay-PropertyWrappers_Tests.release.xcconfig"; path = "Target Support Files/Pods-RxRelay-PropertyWrappers_Tests/Pods-RxRelay-PropertyWrappers_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F79801C659D6C91E1DBED14F /* RxRelay-PropertyWrappers.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "RxRelay-PropertyWrappers.podspec"; path = "../RxRelay-PropertyWrappers.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				D7C8E30D29F748C4004F888E /* PublishRelay+PropertyWrappers-Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C8E30E29F748C4004F888E /* PublishRelay+PropertyWrappers-Tests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
