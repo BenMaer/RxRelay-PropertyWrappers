@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		33CBE28884EF095D03133319 /* Pods-RxRelay-PropertyWrappers_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRelay-PropertyWrappers_Example.release.xcconfig"; path = "Target Support Files/Pods-RxRelay-PropertyWrappers_Example/Pods-RxRelay-PropertyWrappers_Example.release.xcconfig"; sourceTree = "<group>"; };
-		59A80615CC2A06247551F8CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		59A80615CC2A06247551F8CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5D8C1DF62BA0FCCA53656E14 /* Pods-RxRelay-PropertyWrappers_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRelay-PropertyWrappers_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RxRelay-PropertyWrappers_Tests/Pods-RxRelay-PropertyWrappers_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxRelay-PropertyWrappers_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxRelay-PropertyWrappers_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,8 +45,8 @@
 		7A08B3123EA728CD4A1DD780 /* Pods_RxRelay_PropertyWrappers_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRelay_PropertyWrappers_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA114930EE4E242B17189D0E /* Pods_RxRelay_PropertyWrappers_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxRelay_PropertyWrappers_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F059C8BE003F6EC50FF5BA90 /* Pods-RxRelay-PropertyWrappers_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxRelay-PropertyWrappers_Tests.release.xcconfig"; path = "Target Support Files/Pods-RxRelay-PropertyWrappers_Tests/Pods-RxRelay-PropertyWrappers_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F79801C659D6C91E1DBED14F /* RxRelay-PropertyWrappers.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "RxRelay-PropertyWrappers.podspec"; path = "../RxRelay-PropertyWrappers.podspec"; sourceTree = "<group>"; };
-		FBCF82B22430B7A7F12F73CB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F79801C659D6C91E1DBED14F /* RxRelay-PropertyWrappers.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "RxRelay-PropertyWrappers.podspec"; path = "../RxRelay-PropertyWrappers.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FBCF82B22430B7A7F12F73CB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				5D8C1DF62BA0FCCA53656E14 /* Pods-RxRelay-PropertyWrappers_Tests.debug.xcconfig */,
 				F059C8BE003F6EC50FF5BA90 /* Pods-RxRelay-PropertyWrappers_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,7 +189,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				11A6B7449F35803FBB4153EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -285,26 +284,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		11A6B7449F35803FBB4153EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxRelay-PropertyWrappers_Tests/Pods-RxRelay-PropertyWrappers_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxRelay-PropertyWrappers_Tests/Pods-RxRelay-PropertyWrappers_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		829EA7A9248DBD1326FA747A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,11 +313,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RxRelay-PropertyWrappers_Example/Pods-RxRelay-PropertyWrappers_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay-PropertyWrappers/RxRelay_PropertyWrappers.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay_PropertyWrappers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

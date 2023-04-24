@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxRelay-PropertyWrappers'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RxRelay-PropertyWrappers.'
+  s.summary          = 'Offers convenient property wrappers for relays from RXRelay.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Offers convenient property wrappers for relays from RXRelay, in particular where a type wants to publicly offer just an Observable or AnyObserver, while keeping its own private reference to the underlying relay.
                        DESC
 
-  s.homepage         = 'https://github.com/Ben Maer/RxRelay-PropertyWrappers'
+  s.homepage         = 'https://github.com/BenMaer/RxRelay-PropertyWrappers'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ben Maer' => 'ben@resplendent.co' }
-  s.source           = { :git => 'https://github.com/Ben Maer/RxRelay-PropertyWrappers.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/BenMaer/RxRelay-PropertyWrappers.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'RxRelay-PropertyWrappers/Classes/**/*'
   
@@ -38,5 +39,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'RxRelay', '6.5.0'
 end
