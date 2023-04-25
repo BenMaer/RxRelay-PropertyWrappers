@@ -10,7 +10,7 @@ import Foundation
 import RxRelay
 
 // Useful when using instances of `BehaviorRelayObserverProperty`, since the underlying property must be manually init'ed.
-extension RelayManualObserverProperty {
+public extension RelayManualObserverProperty {
     init<Element>(value: Element) where Relay == BehaviorRelay<Element> {
         self.init(relay: .init(value: value))
     }

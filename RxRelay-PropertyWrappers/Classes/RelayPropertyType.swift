@@ -9,4 +9,4 @@ import Foundation
 
 import RxSwift
 
-protocol RelayPropertyType: ObserverType, ObservableType {}
+public protocol RelayPropertyType: ObserverType, ObservableType {}

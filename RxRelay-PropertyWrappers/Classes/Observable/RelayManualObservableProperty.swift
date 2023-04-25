@@ -10,16 +10,12 @@ import Foundation
 import RxSwift
 
 @propertyWrapper
-struct RelayManualObservableProperty<Relay: RelayPropertyType> {
-    typealias Element = Relay.Element
-    let relay: Relay
-    var wrappedValue: Observable<Element> { relay.asObservable() }
-}
-
-extension RelayManualObservableProperty {
-    typealias RelayType = Relay
+public struct RelayManualObservableProperty<Relay: RelayPropertyType> {
+    public typealias Element = Relay.Element
+    public let relay: Relay
+    public var wrappedValue: Observable<Element> { relay.asObservable() }
 }
 
 extension RelayManualObservableProperty: ObserverType {
-    func on(_ event: RxSwift.Event<Element>) { relay.on(event) }
+    public func on(_ event: RxSwift.Event<Element>) { relay.on(event) }
 }

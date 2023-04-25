@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol HasBlankInit {
+public protocol HasBlankInit {
     init()
 }

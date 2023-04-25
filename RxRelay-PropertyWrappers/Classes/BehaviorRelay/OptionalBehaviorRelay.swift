@@ -10,16 +10,18 @@ import Foundation
 import RxRelay
 import RxSwift
 
-final class OptionalBehaviorRelay<OElement> {
-    typealias Element = OElement?
+public final class OptionalBehaviorRelay<OElement> {
+    public typealias Element = OElement?
     private let relay = BehaviorRelay<Element>()
-    var value: Element { relay.value }
+    public var value: Element { relay.value }
+    
+    public init() {}
 }
 
 extension OptionalBehaviorRelay: ObservableType {
-    func subscribe<Observer>(_ observer: Observer) -> Disposable where Observer : ObserverType, Element == Observer.Element { relay.subscribe(observer) }
+    public func subscribe<Observer>(_ observer: Observer) -> Disposable where Observer : ObserverType, Element == Observer.Element { relay.subscribe(observer) }
 }
 
 extension OptionalBehaviorRelay: ObserverType {
-    func on(_ event: RxSwift.Event<Element>) { relay.on(event) }
+    public func on(_ event: RxSwift.Event<Element>) { relay.on(event) }
 }
