@@ -28,10 +28,14 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/BenMaer/RxRelay-PropertyWrappers.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.3'
   s.swift_version = '4.0'
 
   s.source_files = 'RxRelay-PropertyWrappers/Classes/**/*'
+  
+  s.test_spec 'Tests' do |test_spec|
+      test_spec.source_files = 'Example/Tests/**/*.swift'
+  end
   
   # s.resource_bundles = {
   #   'RxRelay-PropertyWrappers' => ['RxRelay-PropertyWrappers/Assets/*.png']
@@ -40,4 +44,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'RxRelay', '6.5.0'
+#   s.dependency 'RxRelay', '5.0.0'
 end
