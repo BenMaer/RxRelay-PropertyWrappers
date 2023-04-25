@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '9.3'
 
 target 'RxRelay-PropertyWrappers_Example' do
-  pod 'RxRelay-PropertyWrappers', :path => '../'
+  pod 'RxRelay-PropertyWrappers', :path => '../', :testspecs => ['Tests']
 
   target 'RxRelay-PropertyWrappers_Tests' do
     inherit! :search_paths

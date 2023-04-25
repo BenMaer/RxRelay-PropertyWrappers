@@ -33,6 +33,10 @@ Pod::Spec.new do |s|
 
   s.source_files = 'RxRelay-PropertyWrappers/Classes/**/*'
   
+  s.test_spec 'Tests' do |test_spec|
+      test_spec.source_files = 'Example/Tests/**/*'
+  end
+  
   # s.resource_bundles = {
   #   'RxRelay-PropertyWrappers' => ['RxRelay-PropertyWrappers/Assets/*.png']
   # }
