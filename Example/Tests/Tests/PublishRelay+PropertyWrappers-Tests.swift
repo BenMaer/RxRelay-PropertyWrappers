@@ -36,6 +36,6 @@ final class PublishRelay_PropertyWrappers_Tests: XCTestCase {
 
 private extension PublishRelay_PropertyWrappers_Tests {
     static func test(observable: Observable<Bool>, observer: AnyObserver<Bool>, file: StaticString = #filePath, line: UInt = #line) {
-        Tests.test(observable: observable, observer: observer, events: .standardEvents, file: file, line: line)
+        Tests.test(observable: observable, observer: observer, events: .standardBoolEvents, file: file, line: line)
     }
 }

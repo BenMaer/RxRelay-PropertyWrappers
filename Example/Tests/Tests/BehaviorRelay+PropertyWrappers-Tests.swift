@@ -51,7 +51,7 @@ private extension BehaviorRelay_PropertyWrappers_Tests {
             observer: observer,
             events: [
                 [.didFire(initialValue)],
-                .standardEvents,
+                .standardBoolEvents,
             ].flatMap({ $0 }),
             file: file,
             line: line

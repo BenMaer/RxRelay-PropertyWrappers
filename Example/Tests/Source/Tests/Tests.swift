@@ -14,12 +14,12 @@ import RxSwift
 enum Tests {}
 
 extension Tests {
-    enum Event: Equatable {
-        case fire(Bool)
-        case didFire(Bool)
+    enum Event<T: Equatable>: Equatable {
+        case fire(T)
+        case didFire(T)
     }
     
-    static func test(observable: Observable<Bool>, observer: AnyObserver<Bool>, events: [Event], file: StaticString = #filePath, line: UInt = #line) {
+    static func test<T: Equatable>(observable: Observable<T>, observer: AnyObserver<T>, events: [Event<T>], file: StaticString = #filePath, line: UInt = #line) {
         let disposeBag = DisposeBag()
         var eventsRemaining = Array(events.reversed())
         
@@ -47,8 +47,8 @@ extension Tests {
     }
 }
 
-extension Array where Element == Tests.Event {
-    static var standardEvents: Self {[
+extension Array where Element == Tests.Event<Bool> {
+    static var standardBoolEvents: Self {[
         .fire(true),
         .didFire(true),
         .fire(false),
