@@ -10,5 +10,5 @@ import Foundation
 import RxRelay
 
 extension ReplayRelay: RxRelayType, RelayPropertyType {}
-typealias ReplayRelayObservableProperty<Element> = RelayManualObservableProperty<ReplayRelay<Element>>
-typealias ReplayRelayObserverProperty<Element> = RelayManualObserverProperty<ReplayRelay<Element>>
+public typealias ReplayRelayObservableProperty<Element> = RelayManualObservableProperty<ReplayRelay<Element>>
+public typealias ReplayRelayObserverProperty<Element> = RelayManualObserverProperty<ReplayRelay<Element>>

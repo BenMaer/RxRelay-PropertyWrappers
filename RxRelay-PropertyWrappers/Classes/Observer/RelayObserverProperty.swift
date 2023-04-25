@@ -10,12 +10,14 @@ import Foundation
 import RxSwift
 
 @propertyWrapper
-struct RelayObserverProperty<Relay: RelayPropertyType & HasBlankInit> {
-    typealias Element = Relay.Element
-    let relay = Relay()
-    var wrappedValue: AnyObserver<Element> { relay.asObserver() }
+public struct RelayObserverProperty<Relay: RelayPropertyType & HasBlankInit> {
+    public typealias Element = Relay.Element
+    public let relay = Relay()
+    public var wrappedValue: AnyObserver<Element> { relay.asObserver() }
+    
+    public init() {}
 }
 
 extension RelayObserverProperty: ObservableType {
-    func subscribe<Observer>(_ observer: Observer) -> Disposable where Observer : ObserverType, Relay.Element == Observer.Element { relay.subscribe(observer) }
+    public func subscribe<Observer>(_ observer: Observer) -> Disposable where Observer : ObserverType, Relay.Element == Observer.Element { relay.subscribe(observer) }
 }
