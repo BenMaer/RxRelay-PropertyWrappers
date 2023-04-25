@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.source_files = 'RxRelay-PropertyWrappers/Classes/**/*'
   
   s.test_spec 'Tests' do |test_spec|
-      test_spec.source_files = 'Example/Tests/**/*'
+      test_spec.source_files = 'Example/Tests/**/*.swift'
   end
   
   # s.resource_bundles = {
@@ -44,4 +44,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'RxRelay', '6.5.0'
+#   s.dependency 'RxRelay', '5.0.0'
 end

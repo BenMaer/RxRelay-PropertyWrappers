@@ -29,7 +29,7 @@
     {
       "name": "Tests",
       "test_type": "unit",
-      "source_files": "Example/Tests/**/*"
+      "source_files": "Example/Tests/**/*.swift"
     }
   ],
   "swift_version": "4.0"
