@@ -1,7 +1,7 @@
 PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
-  - RxRelay-PropertyWrappers (0.1.0):
+  - RxRelay-PropertyWrappers (0.2.0):
     - RxRelay (= 6.5.0)
   - RxSwift (6.5.0)
 
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxRelay-PropertyWrappers: 6667a673803973ea52149f025b47ec4fae8953e4
+  RxRelay-PropertyWrappers: ab33d101a73b1474c13dbf59255c45abcf43f45a
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
 PODFILE CHECKSUM: f70de84fe2e2ea8d0185f3672d30ea5fa217625c

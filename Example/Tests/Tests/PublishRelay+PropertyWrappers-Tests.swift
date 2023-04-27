@@ -13,20 +13,20 @@ import RxSwift
 @testable import RxRelay_PropertyWrappers
 
 final class PublishRelay_PropertyWrappers_Tests: XCTestCase {
-    func test_PublishRelayObservableProperty() {
+    func test_PublishRelayObserverProperty() {
         class Test {
-            @PublishRelayObservableProperty var observable: Observable<Bool>
-            var observer: AnyObserver<Bool> { _observable.asObserver() }
+            @PublishRelayObserverProperty var observer: AnyObserver<Bool>
+            var observable: Observable<Bool> { _observer.asObservable() }
         }
         
         let test = Test()
         Self.test(observable: test.observable, observer: test.observer)
     }
     
-    func test_PublishRelayObserverProperty() {
+    func test_PublishRelayObservableProperty() {
         class Test {
-            @PublishRelayObserverProperty var observer: AnyObserver<Bool>
-            var observable: Observable<Bool> { _observer.asObservable() }
+            @PublishRelayObservableProperty var observable: Observable<Bool>
+            var observer: AnyObserver<Bool> { _observable.asObserver() }
         }
         
         let test = Test()
