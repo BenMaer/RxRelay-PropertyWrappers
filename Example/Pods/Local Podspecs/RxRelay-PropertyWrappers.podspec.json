@@ -1,6 +1,6 @@
 {
   "name": "RxRelay-PropertyWrappers",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "summary": "Offers convenient property wrappers for relays from RXRelay.",
   "description": "Offers convenient property wrappers for relays from RXRelay, in particular where a type wants to publicly offer just an Observable or AnyObserver, while keeping its own private reference to the underlying relay.",
   "homepage": "https://github.com/BenMaer/RxRelay-PropertyWrappers",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/BenMaer/RxRelay-PropertyWrappers.git",
-    "tag": "v0.1.1"
+    "tag": "v0.2.0"
   },
   "platforms": {
     "ios": "9.3"
