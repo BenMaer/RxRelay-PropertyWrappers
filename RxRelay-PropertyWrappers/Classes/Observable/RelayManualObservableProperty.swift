@@ -14,7 +14,7 @@ public struct RelayManualObservableProperty<Relay: RelayPropertyType> {
     public typealias Element = Relay.Element
     public let relay: Relay
     public var wrappedValue: Observable<Element> { relay.asObservable() }
-    init(relay: Relay) {
+    public init(relay: Relay) {
         self.relay = relay
     }
 }

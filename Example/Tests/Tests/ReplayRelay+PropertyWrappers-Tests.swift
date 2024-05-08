@@ -24,7 +24,7 @@ final class ReplayRelay_PropertyWrappers_Tests: XCTestCase {
             @ReplayRelayObservableProperty var observable: Observable<Int>
             var observer: AnyObserver<Int> { _observable.asObserver() }
             required init(bufferSize: Int) {
-                _observable = .init(relay: .create(bufferSize: bufferSize))
+                _observable = .init(bufferSize: bufferSize)
             }
         }
         
@@ -36,7 +36,7 @@ final class ReplayRelay_PropertyWrappers_Tests: XCTestCase {
             @ReplayRelayObserverProperty var observer: AnyObserver<Int>
             var observable: Observable<Int> { _observer.asObservable() }
             required init(bufferSize: Int) {
-                _observer = .init(relay: .create(bufferSize: bufferSize))
+                _observer = .init(bufferSize: bufferSize)
             }
         }
         
