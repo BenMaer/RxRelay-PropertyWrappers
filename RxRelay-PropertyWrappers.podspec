@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxRelay-PropertyWrappers'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'Offers convenient property wrappers for relays from RXRelay.'
 
 # This description is used to generate tags and improve search results.
@@ -35,5 +35,5 @@ Pod::Spec.new do |s|
       test_spec.source_files = 'Example/Tests/**/*.swift'
   end
   
-   s.dependency 'RxRelay', '6.5.0'
+   s.dependency 'RxRelay', '~> 6.5'
 end
