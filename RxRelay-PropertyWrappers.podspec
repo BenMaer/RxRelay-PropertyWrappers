@@ -35,5 +35,5 @@ Pod::Spec.new do |s|
       test_spec.source_files = 'Example/Tests/**/*.swift'
   end
   
-   s.dependency 'RxRelay', '6.9.0'
+   s.dependency 'RxRelay', '~> 6.5'
 end
