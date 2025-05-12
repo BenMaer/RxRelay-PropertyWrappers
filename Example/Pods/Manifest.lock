@@ -1,9 +1,9 @@
 PODS:
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxRelay-PropertyWrappers (0.2.1):
-    - RxRelay (= 6.5.0)
-  - RxSwift (6.5.0)
+  - RxRelay (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxRelay-PropertyWrappers (0.2.2):
+    - RxRelay (~> 6.5)
+  - RxSwift (6.9.0)
 
 DEPENDENCIES:
   - RxRelay-PropertyWrappers (from `../`)
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxRelay-PropertyWrappers: 35d741b204a23d308b7890bd5c108f56ca324398
-  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
+  RxRelay-PropertyWrappers: 1be8a4c0b9271ac3997aa9c7ff083a1e64f1189e
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
 
 PODFILE CHECKSUM: f70de84fe2e2ea8d0185f3672d30ea5fa217625c
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
